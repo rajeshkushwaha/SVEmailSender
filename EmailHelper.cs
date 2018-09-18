@@ -15,10 +15,21 @@ namespace SVEmailSender
         public string password { get; set; }
         public string smtpaddress { get; set; }
         public int port { get; set; }
-        public bool isssl { get; set; }
+        public bool isssl { get; set; }        
+        
+        
         public string toemail { get; set; }
-        public string body { get; set; }
+        public string cc { get; set; }
+        public string bcc { get; set; }
         public string subject { get; set; }
+        public string body { get; set; }
+        public string signature { get; set; }
+        public string attachment { get; set; }
+
+        //This property is not going to use.
+        public bool isemailsent { get; set; }
+
+
 
         SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
 
